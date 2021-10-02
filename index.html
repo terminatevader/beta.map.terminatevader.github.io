@@ -8,7 +8,20 @@
  <title>TermiNateVader Map</title>
 </head>
  <body>
-   
+   <div id="desktop">
   <iframe  src="https://maphub.net/embed/157690?legend=1&panel=1&panel_closed=1" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px;border:none;"></iframe>
- </body>
+  </div>
+  <div id="mobile">
+  </div>
+   
+    </body>
+  <script>
+   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+  document.getElementById("desktop").style.display="none";
+}
+      if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+  document.getElementById("mobile").style.display="none";
+}
+  </script>
+   
 </html>
