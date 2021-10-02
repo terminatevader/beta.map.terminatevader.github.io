@@ -5,7 +5,12 @@
 <meta property="og:link" content="http://map.terminatevader.com/">
 <meta property="og:title" content="TermiNateVader Map">
  <meta property="og:description" content="Check out the locations where my videos were filmed">
+<div id="desktopTitle">
  <title>TermiNateVader Map </title>
+</div>
+<div id="mobileTitle">
+<title>TNV Map</title>
+</div>
 </head>
  <body>
    <div id="desktop">
@@ -56,10 +61,12 @@
   <script>
    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
   document.getElementById("desktop").style.display="none";
+document.getElementById("desktopTitle").style.display="none";
     alert("To view the map visit this website on a computer")
 }
       if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
   document.getElementById("mobile").style.display="none";
+document.getElementById("mobileTitle").style.display="none";
 }
   </script>
    
