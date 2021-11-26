@@ -1,7 +1,7 @@
 const cacheName = 'TermiNateVader Map';
 const appShellFiles = [
-  'https://map.terminateavader.com/index.html',
-  'https://map.terminateavader.com/TNV.png',
+  'https://map.terminatevader.com/index.html',
+  'https://map.terminatevader.com/TNV.png',
 ];
 
 console.log('Started', self);
