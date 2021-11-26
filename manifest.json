@@ -8,7 +8,7 @@
   "type": "image/png"
   }
   ],
-  "start_url": "https:/map.terminatevader.com/",
+  "start_url": "/",
   "background_color": "#320c52",
   "theme_color": "#320c52",
   "display": "standalone"
