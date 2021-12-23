@@ -21,6 +21,7 @@
  <meta property="og:description" content="Check out the locations where my videos were filmed">
  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
  <body>
+    	<div id="TNV">
   <style>
         iframe {
   position: absolute;
@@ -35,6 +36,8 @@
       <iframe src="https://maphub.net/embed/165029?legend=1&panel=1&panel_closed=1" frameborder="0"></iframe>
   <script>
  if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+    alert("Internet Explorer is no longer supported");
+    document.getElementById("TNV").style.display = "none";
     window.location = 'microsoft-edge:' + window.location;
     setTimeout(function() {
       window.location = 'https://go.microsoft.com/fwlink/?linkid=2135547';
@@ -46,6 +49,7 @@ navigator.serviceWorker.register('/service-worker.js')
     .catch(() => console.log('service worker not registered'))
 }
   </script>
+    </div>
     </body>
  
    
