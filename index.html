@@ -24,7 +24,6 @@
  <meta property="og:description" content="Check out the locations where my videos were filmed">
  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
  <body>
-    	<div id="TNV">
   <style>
         iframe {
   position: absolute;
@@ -36,7 +35,12 @@
   
 }
         </style>
+    <div id="online">
       <iframe src="https://maphub.net/embed/165029?legend=1&panel=1&panel_closed=1" frameborder="0"></iframe>
+    </div>
+    <div id="offline">
+       <img src="TNVM.png" loading="lazy">
+    </div>
   <script>
  if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
     alert("Internet Explorer is no longer supported");
@@ -51,6 +55,15 @@ navigator.serviceWorker.register('/service-worker.js')
     .then(() => console.log('service worker registered'))
     .catch(() => console.log('service worker not registered'))
 }
+     window.addEventListener(‘offline’, () => {
+    var offline = document.getElementId("offline"); //divsToHide is an array
+    offline.style.display = none;
+});
+     
+       window.addEventListener(‘online’, () => {
+    var online = document.getElementId("online"); //divsToHide is an array
+    online.style.display = none;
+});
   </script>
     </div>
     </body>
