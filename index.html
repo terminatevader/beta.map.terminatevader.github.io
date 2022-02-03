@@ -51,7 +51,7 @@ position: absolute;
        <img src="https://map.terminatevader.com/TNVM.jpg" loading="lazy">
     </div>
   <script>
- if (window.document.documentMode) {
+ if (window.document.documentMode != "undefined") {
     alert("Internet Explorer is no longer supported");
     document.getElementById("TNV").style.display = "none";
     window.location = 'microsoft-edge:' + window.location;
@@ -73,6 +73,12 @@ navigator.serviceWorker.register('/service-worker.js')
     var online = document.getElementId("online"); //divsToHide is an array
     online.style.display = none;
 });
+
+if(/TV/i.test(navigator.userAgent))
+{
+  alert("This website is not yet available for your device")
+  document.getElementById("TNV").style.display = "none";
+}
   </script>
     </div>
     </body>
