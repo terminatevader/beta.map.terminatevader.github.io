@@ -66,12 +66,6 @@ navigator.serviceWorker.register('/service-worker.js')
     var online = document.getElementId("online"); //divsToHide is an array
     online.style.display = none;
 });
-
-if(/TV/i.test(navigator.userAgent))
-{
-  alert("This website is not yet available for your device")
-  document.getElementById("TNV").style.display = "none";
-}
   </script>
     </div>
     </body>
