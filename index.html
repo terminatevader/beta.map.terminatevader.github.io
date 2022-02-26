@@ -44,28 +44,18 @@ position: absolute;
   
      }
         </style>
-    <div id="online">
+    
       <iframe src="https://maphub.net/embed/165029?legend=1&panel=1&panel_closed=1" frameborder="0"></iframe>
-    </div>
-    <div id="offline">
-       <img src="https://map.terminatevader.com/TNVM.jpg" loading="lazy">
-    </div>
-  <script>
- 
+    
+    
+  
+ <script>
     if ('serviceWorker' in navigator){
 navigator.serviceWorker.register('/service-worker.js')
     .then(() => console.log('service worker registered'))
     .catch(() => console.log('service worker not registered'))
 }
-     window.addEventListener(‘offline’, () => {
-    var offline = document.getElementId("offline"); //divsToHide is an array
-    offline.style.display = none;
-});
      
-       window.addEventListener(‘online’, () => {
-    var online = document.getElementId("online"); //divsToHide is an array
-    online.style.display = none;
-});
   </script>
     </div>
     </body>
